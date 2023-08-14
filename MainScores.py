@@ -11,4 +11,4 @@ def read_score():
     except ValueError:
         return render_template('WebError.html', ERROR=BAD_RETURN_CODE)
 
-app.run()
+app.run(host='0.0.0.0')
