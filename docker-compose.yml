@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: wog-flask:latest
+    image: royygoren/wog-flask:latest
     container_name: wog-flask
     ports:
         - 8777:5000

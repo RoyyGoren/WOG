@@ -4,6 +4,6 @@ RUN pip install Flask
 COPY MainScores.py .
 COPY Utils.py .
 COPY Scores.txt /homework/
-COPY templates .
+COPY templates ./templates
 CMD python MainScores.py 
 
