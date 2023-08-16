@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
@@ -12,7 +11,6 @@ def test_scores_service():
     score_test = web_driver.find_element(By.XPATH, '//*[@id="score"]')
     n_score = int(score_test.text)
 
-    print("stage 1")
     if n_score >= 1 or n_score <= 1000:
         return True
     else:
@@ -27,4 +25,4 @@ def main_function():
         return -1
 
 
-
+print(main_function())
