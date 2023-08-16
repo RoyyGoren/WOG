@@ -8,10 +8,11 @@ web_driver = webdriver.Chrome()
 
 
 def test_scores_service():
-    web_driver.get('http://127.0.0.1:5000')
+    web_driver.get('http://127.0.0.1:8777')
     score_test = web_driver.find_element(By.XPATH, '//*[@id="score"]')
     n_score = int(score_test.text)
 
+    print("stage 1")
     if n_score >= 1 or n_score <= 1000:
         return True
     else:
